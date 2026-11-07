@@ -157,7 +157,7 @@ let tt;const toast=t=>{const e=$('toast');e.textContent=t;e.classList.add('on');
 
 // sample krathongs keep the river lively until real ones arrive
 const demoWishes=['ขอให้ทุกคนมีความสุข','ขอให้สอบผ่านทุกวิชา','ขอให้พ่อแม่สุขภาพแข็งแรง','ขอให้สิ่งไม่ดีลอยไปกับสายน้ำ','ขอให้ได้เจอคนดี ๆ','ขอให้งานราบรื่น','ขอให้มีกินมีใช้ไม่ขัดสน','ขอให้ยิ้มได้ทุกวัน'];
-const demoRecs=demoWishes.map((w,i)=>({id:'demo'+i,demo:true,name:'กระทงตัวอย่าง',wish:w,type:TYPES[i%5][0],ts:Date.now()-Math.random()*80000,lane:Math.random(),dur:Math.round(70+Math.random()*50),uid:null}));
+const demoRecs=demoWishes.map((w,i)=>({id:'demo'+i,demo:true,name:'กระทง',wish:w,type:TYPES[i%5][0],ts:Date.now()-Math.random()*80000,lane:Math.random(),dur:Math.round(70+Math.random()*50),uid:null}));
 
 function mk(r){
   const s=.55+r.lane*.6,ph=((Date.now()-r.ts)/1000/r.dur+.25)%1;
